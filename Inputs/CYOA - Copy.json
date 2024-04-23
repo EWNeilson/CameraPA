@@ -1,0 +1,76 @@
+
+{
+	"DT_Branches":
+	{
+		"0":
+			{
+			"Text" : "Do you want to \n (1) Estimate population metric? \n (2) Monitor species \n (B) Back\n",
+			"posAnswers" : ["1","2"],
+			"ResponseIndices" : ["1","7"],
+			"Function" : ""
+			},
+		"1":
+			{
+			"Text" : "Are you investigating \n (1) Population  \n (2) Distribution? \n (B) Back\n",
+			"posAnswers" : ["1","2"],
+			"ResponseIndices" : ["2","3"],
+			"Function" : ""
+			},
+		"2":
+			{
+			"Text" : "Are you estimating \n (1) Population Size \n (2) Population Density  \n (3) Population Change \n (B) Back\n",
+			"posAnswers" : ["1","2","3"],
+			"ResponseIndices" : ["7","7","7"],
+			"Function" : ""
+			},
+		"3":
+			{
+			"Text" : "Are you estimating \n (1) Habitat Use \n (2) Geographic Range  \n (3) Occupancy \n (B) Back\n",
+			"posAnswers" : ["1","2","3"],
+			"ResponseIndices" : ["7","7","4"],
+			"Function" : "addResponseVar"
+			},
+		"4":
+			{
+			"Text" : "Would you like to do a power analsyis for site design \n (1) Yes  \n (2) No \n (B) Back\n",
+			"posAnswers" : ["1","2"],
+			"ResponseIndices" : ["5","8"],
+			"Function" : ""
+			},
+		"5":
+			{
+			"Text" : "Do you have predictor layers that could be used to model your response variable \n (1) Yes  \n (2) No \n (B) Back\n",
+			"posAnswers" : ["1","2"],
+			"ResponseIndices" : ["6","8"],
+			"Function" : ""
+			},
+		"6":
+			{
+			"Text" : " Press (1) to enter spatial data or  \n (B) to go back\n",
+			"posAnswers" : ["1","2"],
+			"ResponseIndices" : ["8"],
+			"Function" : "inputSpatial"
+			},
+		"7":
+			{
+			"Text" : "Adding content for this poriton. \n (1) End \n (B) Back\n",
+			"posAnswers" : ["1"],
+			"ResponseIndices" : [],
+			"Function" : "endTool"
+			},
+		"8":
+			{
+			"Text" : "Analysis inputs ready!  \n (1) Simulate response \n ",
+			"posAnswers" : ["1"],
+			"ResponseIndices" : ["9"],
+			"Function" : "simulateReponse"
+			},
+		"9":
+			{
+			"Text" : "Response simulated, check output directory for response raster for mapping. \n Press (1) to assess power given an array of cameras \n (B) to go back\n",
+			"posAnswers" : ["1"],
+			"ResponseIndices" : ["7"],
+			"Function" : "testPower"
+			}
+	}
+}

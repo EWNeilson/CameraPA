@@ -1,0 +1,28 @@
+{
+    "SA": "path to studyArea .shp",
+    "cellSize": 250,
+    "outPath": "path to output folder",
+	"population": [
+		{
+			"HomeRangeRadius": 10,
+			"Density": 0.1,
+			"Speed": 10,
+			"BodySize": "medium",
+			"GroupSize": 2
+		}
+    ],
+    "predictors": [
+        {
+            "Name": "WaterProx",
+            "Path": "path to lakes and rivers .shp",
+            "Type": "Vector",
+            "Transform": "Proximity"
+        },
+        {
+            "Name": "DEM",
+            "Path": "path to DEM. tif",
+            "Type": "Raster",
+            "Transform": "Scale"
+        }
+    ]
+}
