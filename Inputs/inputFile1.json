@@ -1,0 +1,19 @@
+{
+    "SA": "C:/Users/erneilso/OneDrive - NRCan RNCan/Collaborations/ROF/Data/Shapes/ROF_SA.shp",
+    "cellSize": 5000,
+    "outPath": "C:/Users/erneilso/OneDrive - NRCan RNCan/Collaborations/ROF/SpatialPowerAnalysis/Output",
+    "predictors": [
+        {
+            "Name": "WaterProx",
+            "Path": "D:/LocalProjects/Data/Water/Waterbody_1M.shp",
+            "Type": "Vector",
+            "Transform": "Proximity"
+        },
+        {
+            "Name": "DEM",
+            "Path": "D:/LocalProjects/Data/Elevation/can3d30_tiff.tif",
+            "Type": "Raster",
+            "Transform": "Scale"
+        }
+    ]
+}
